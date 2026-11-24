@@ -1,0 +1,28 @@
+{
+  "version": "2.6.2",
+  "release_version": "",
+  "released_at": "2026-11-23",
+  "summary": {
+    "title": "OWASP-THREAT-MODEL",
+    "owner": "Bennerth Gyamfi",
+    "description": "A small wireless LAN consisting of one router/access point connected to an ISP, several client devices (laptops and smartphones), a shared printer, and an IoT device. Users connect over Wi-Fi using a pre-shared key, with a separate guest/IoT segment. This model identifies the assets, threats and vulnerabilities of the WLAN using the STRIDE method and proposes controls to reduce risk.",
+    "id": 0
+  },
+  "detail": {
+    "contributors": [],
+    "diagrams": [
+      {
+        "id": 0,
+        "title": "OWASP Data Flow",
+        "diagramType": "STRIDE",
+        "placeholder": "New STRIDE diagram description",
+        "thumbnail": "./public/content/images/thumbnail.stride.jpg",
+        "version": "2.6.2",
+        "cells": []
+      }
+    ],
+    "diagramTop": 1,
+    "reviewer": "",
+    "threatTop": 0
+  }
+}
