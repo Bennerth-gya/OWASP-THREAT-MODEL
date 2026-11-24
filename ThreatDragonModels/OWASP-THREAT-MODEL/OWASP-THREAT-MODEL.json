@@ -58,7 +58,7 @@
           {
             "position": {
               "x": 630,
-              "y": 430
+              "y": 420
             },
             "size": {
               "width": 350,
@@ -79,9 +79,7 @@
               "description": "",
               "isTrustBoundary": true,
               "hasOpenThreats": false,
-              "crossingFlows": [
-                "21a14cbf-1945-412e-ad91-a11312dd58df"
-              ],
+              "crossingFlows": [],
               "containedElements": [
                 "24cc1ec4-edb8-4067-b347-6b4247536ba6"
               ]
@@ -798,64 +796,6 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "IoT data",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": [
-                "1c5bf6cf-0d93-4ed6-a032-f52d0a8ce262"
-              ]
-            },
-            "labels": [
-              "IoT data"
-            ],
-            "id": "21a14cbf-1945-412e-ad91-a11312dd58df",
-            "source": {
-              "x": 700,
-              "y": 270
-            },
-            "target": {
-              "cell": "24cc1ec4-edb8-4067-b347-6b4247536ba6",
-              "port": "1f71556e-d43d-42a3-baa9-f73c1f38267a"
-            },
-            "vertices": [
-              {
-                "x": 700,
-                "y": 330
-              },
-              {
-                "x": 716,
-                "y": 360
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
               "name": "Guess Wi-Fi",
               "description": "",
               "outOfScope": false,
@@ -1415,6 +1355,62 @@
               "storesInventory": false,
               "threats": []
             }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 15,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Data Flow"
+            ],
+            "id": "f569c1c8-564b-481d-bcbb-3e7a8c0d34d7",
+            "source": {
+              "x": 410,
+              "y": 470
+            },
+            "target": {
+              "x": 270,
+              "y": 360
+            },
+            "vertices": [
+              {
+                "x": 380,
+                "y": 490
+              },
+              {
+                "x": 310,
+                "y": 400
+              }
+            ]
           }
         ]
       }
