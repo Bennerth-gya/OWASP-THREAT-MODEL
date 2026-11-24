@@ -46,7 +46,8 @@
               "crossingFlows": [
                 "abe2ac3f-f322-448c-8f69-f136d29fa6f4",
                 "b76bf84c-fc75-4e81-950b-8efb37a2e184",
-                "b1bc0dea-26ed-4ff5-8504-0ec578704be3"
+                "b1bc0dea-26ed-4ff5-8504-0ec578704be3",
+                "33576fde-3fbc-4ae9-9480-275a1ed06db5"
               ],
               "containedElements": [
                 "7fe68f26-1b93-4edd-bfef-d640ea9da39f",
@@ -1105,7 +1106,8 @@
             "shape": "flow",
             "attrs": {
               "line": {
-                "stroke": "#333333",
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "targetMarker": {
                   "name": "block"
                 },
@@ -1121,30 +1123,51 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "Sniffing deauth",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isBidirectional": false,
               "isEncrypted": false,
               "isPublicNetwork": false,
               "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": []
+              "threats": [
+                {
+                  "id": "2bc56b57-b4c4-4742-a156-1cfb05b67b77",
+                  "title": "Sniffing deauth",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Information disclosure",
+                  "description": "Provide a description for this threatAn attacker within radio range captures wireless traffic between clients and the access point. If the network uses weak or no encryption, or the passphrase is weak or shared, the attacker can read or crack it offline and expose user data such as credentials and browsing activity.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 2,
+                  "score": ""
+                }
+              ],
+              "trustBoundaryIds": [
+                "a956e808-b663-45ad-bc8c-ccf117b706e4"
+              ],
+              "threatFrequency": {
+                "tampering": 1,
+                "informationDisclosure": 2,
+                "denialOfService": 0
+              }
             },
             "labels": [
-              "Data Flow"
+              "Sniffing deauth"
             ],
-            "id": "6c886553-5f39-441b-8510-f895be0bde5d",
+            "id": "33576fde-3fbc-4ae9-9480-275a1ed06db5",
             "source": {
               "x": 283,
-              "y": 290
+              "y": 294
             },
             "target": {
-              "x": 383,
-              "y": 390
+              "cell": "7fe68f26-1b93-4edd-bfef-d640ea9da39f",
+              "port": "8211359e-259b-41cf-9b44-ce1742327fe0"
             }
           },
           {
@@ -1412,6 +1435,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 15,
             "ports": {
               "groups": {
                 "top": {
@@ -1495,7 +1519,6 @@
               ]
             },
             "id": "55260253-2df1-4a59-aa7f-d503e837b54a",
-            "zIndex": 15,
             "data": {
               "type": "tm.Store",
               "name": "NAS/Printer",
@@ -1517,6 +1540,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "",
-    "threatTop": 1
+    "threatTop": 2
   }
 }
