@@ -45,7 +45,6 @@
               "hasOpenThreats": false,
               "crossingFlows": [
                 "abe2ac3f-f322-448c-8f69-f136d29fa6f4",
-                "bcc70a52-b89c-4824-93dc-a57a009973ee",
                 "b76bf84c-fc75-4e81-950b-8efb37a2e184",
                 "b1bc0dea-26ed-4ff5-8504-0ec578704be3"
               ],
@@ -834,80 +833,6 @@
             "shape": "flow",
             "attrs": {
               "line": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "sniff",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": true,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [
-                {
-                  "id": "4d4ac06c-64b0-4b08-afb1-cbf637058fc9",
-                  "title": "sniffing, deauth",
-                  "status": "Open",
-                  "severity": "TBD",
-                  "type": "Information disclosure",
-                  "description": "Provide a description for this threat",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 1,
-                  "score": ""
-                }
-              ],
-              "trustBoundaryIds": [
-                "a956e808-b663-45ad-bc8c-ccf117b706e4"
-              ],
-              "threatFrequency": {
-                "tampering": 0,
-                "informationDisclosure": 1,
-                "denialOfService": 0
-              }
-            },
-            "labels": [
-              "sniff"
-            ],
-            "id": "bcc70a52-b89c-4824-93dc-a57a009973ee",
-            "source": {
-              "x": 283,
-              "y": 294
-            },
-            "target": {
-              "cell": "7fe68f26-1b93-4edd-bfef-d640ea9da39f",
-              "port": "0151b52f-2e57-4a0c-9081-091ec48faf8e"
-            },
-            "vertices": [
-              {
-                "x": 440,
-                "y": 260
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
                 "stroke": "#333333",
                 "targetMarker": {
                   "name": "block"
@@ -953,6 +878,21 @@
             },
             "tools": {
               "items": [
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
                 "boundary",
                 "button-remove",
                 "vertices",
@@ -1159,6 +1099,52 @@
             "target": {
               "cell": "7fe68f26-1b93-4edd-bfef-d640ea9da39f",
               "port": "8211359e-259b-41cf-9b44-ce1742327fe0"
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Data Flow"
+            ],
+            "id": "6c886553-5f39-441b-8510-f895be0bde5d",
+            "source": {
+              "x": 283,
+              "y": 290
+            },
+            "target": {
+              "x": 383,
+              "y": 390
             }
           },
           {
