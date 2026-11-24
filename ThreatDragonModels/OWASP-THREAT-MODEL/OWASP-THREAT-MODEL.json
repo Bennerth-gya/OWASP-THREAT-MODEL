@@ -30,7 +30,7 @@
             },
             "attrs": {
               "label": {
-                "text": "Trust Boundary"
+                "text": "WLAN Trust Boundary"
               }
             },
             "visible": true,
@@ -39,7 +39,7 @@
             "id": "a956e808-b663-45ad-bc8c-ccf117b706e4",
             "data": {
               "type": "tm.BoundaryBox",
-              "name": "Trust Boundary",
+              "name": "WLAN Trust Boundary",
               "description": "",
               "isTrustBoundary": true,
               "hasOpenThreats": false,
@@ -54,6 +54,13 @@
                 "705cc591-2520-4fd3-b0d3-ab90617ef96a",
                 "55260253-2df1-4a59-aa7f-d503e837b54a"
               ]
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {
